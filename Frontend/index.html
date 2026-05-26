@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Habit Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌟 Daily Habit Tracker</h1>
+    <p class="date" id="today-date"></p>
+
+    <form id="habit-form">
+      <div class="habit-list" id="habit-list">
+        <!-- Habits rendered by JS -->
+      </div>
+      <button type="submit">Save Today's Habits</button>
+    </form>
+
+    <div id="message" class="message hidden"></div>
+
+    <h2>🔥 Your Streaks</h2>
+    <div class="streaks" id="streaks">
+      <!-- Streaks rendered by JS -->
+    </div>
+
+    <button class="report-btn" onclick="generateReport()">📄 Generate Weekly Report</button>
+    <div id="report-output" class="report-output hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 550px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 6px;
+  color: #e94560;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 30px 0 15px;
+  color: #f5a623;
+}
+
+.date {
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+}
+
+.habit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 25px;
+}
+
+.habit-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(255,255,255,0.07);
+  padding: 14px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.habit-item:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+.habit-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #e94560;
+  cursor: pointer;
+}
+
+.habit-item label {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.habit-item .emoji {
+  font-size: 1.4rem;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background: #e94560;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: #c73652;
+}
+
+.message {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 0.95rem;
+  background: rgba(100, 220, 100, 0.15);
+  color: #7dff7d;
+  border: 1px solid rgba(100,220,100,0.3);
+}
+
+.hidden {
+  display: none;
+}
+
+.streaks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.streak-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.07);
+  padding: 12px 18px;
+  border-radius: 12px;
+}
+
+.streak-item .habit-name {
+  font-size: 0.95rem;
+}
+
+.streak-badge {
+  background: #f5a623;
+  color: #000;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.report-btn {
+  margin-top: 30px;
+  width: 100%;
+  padding: 13px;
+  background: #0f3460;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.report-btn:hover {
+  background: #1a5276;
+}
+
+.report-output {
+  margin-top: 20px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 12px;
+  padding: 20px;
+  font-family: monospace;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  color: #a8e6cf;
+  border: 1px solid rgba(255,255,255,0.1);
+}

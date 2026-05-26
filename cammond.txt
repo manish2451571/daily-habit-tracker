@@ -1,0 +1,6 @@
+Install deps: pip install flask flask-cors
+Start backend: python DailyHabitTracker/Backend/server.py
+Open 
+index.html
+ in browser
+The app lets you check off 5 daily habits, tracks streaks, shows a weekly report in the browser, and the Java file exports a formatted WeeklyReport.txt.
